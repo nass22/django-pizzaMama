@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu des pizzas</title>
+
+    <link rel="stylesheet" href="{% static 'menu/style.css' %}">
+</head>
+<body>
+    <div id="logo">
+        <img src="{% static 'menu/images/small_logo.png' %}" alt="">
+    </div>
+
+    <div class="menu_title">
+        <h1>Les pizzas</h1>
+    </div>
+    
+    <div class="menu_list">
+            {% for pizza in pizzas %}
+                <div class="menu_list_item">
+                    <span class="menu_list_title">{{ pizza.nom }}</span> <span class="menu_list_price">{{ pizza.prix | floatformat:2}}€</span>
+                    <div class="menu_list_ingredients">{{ pizza.ingredients | capfirst}}</div>
+                </div>
+            {% endfor %}
+
+    </div>
+    
+</body>
+</html>
