@@ -1,5 +1,5 @@
 body{
-    background: url("images/menu_background.jpg") no-repeat center center fixed;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/menu_background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -53,4 +53,17 @@ h1{
     font-size: 14px;
     color: #c8c8c8;
     opacity: 80%;
+    width: 320px;
+}
+
+.badge_vegetarienne{
+    background-color:#067014;
+    color: black;
+    font-size: 9px;
+    font-weight: bold;
+    margin-top: 6px;
+    width: 70px;
+    padding: 3px 8px;
+    border-radius: 8px;
+    margin-left: 5px;
 }

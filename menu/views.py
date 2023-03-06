@@ -3,7 +3,7 @@ from .models import Pizza
 
 # Create your views here.
 def index(request):
-    pizzas = Pizza.objects.all()
+    pizzas = Pizza.objects.all().order_by('prix')
     # # for pizza in pizzas:
     # #     return HttpResponse(pizza.nom + str(pizza.prix))
         
