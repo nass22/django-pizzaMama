@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,8 @@
 </head>
 <body>
     <div id="logo">
-        <img src="{% static 'menu/images/small_logo.png' %}" alt="">
+        <a href="{% url 'home:index' %}"><img src="{% static 'menu/images/small_logo.png' %}" alt=""></a>
+        
     </div>
 
     <div class="menu_title">
